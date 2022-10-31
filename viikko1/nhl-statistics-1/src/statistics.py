@@ -1,5 +1,13 @@
+from sortby import SortBy
+
 def sort_by_points(player):
     return player.points
+
+def sort_by_goals(player):
+    return player.goals
+
+def sort_by_assists(player):
+    return player.assists
 
 
 class Statistics:
@@ -23,16 +31,24 @@ class Statistics:
 
         return list(players_of_team)
 
-    def top(self, how_many):
+    def top(self, how_many, sort_by=SortBy.POINTS):
+        sort_method = None
+        if sort_by == SortBy.GOALS:
+            sort_method = sort_by_goals
+        elif sort_by == SortBy.ASSISTS:
+            sort_method = sort_by_assists
+        else:
+            sort_method = sort_by_points
+
         sorted_players = sorted(
             self._players,
             reverse=True,
-            key=sort_by_points
+            key=sort_method
         )
 
         result = []
         i = 0
-        while i <= how_many:
+        while i <= how_many - 1:
             result.append(sorted_players[i])
             i += 1
 
