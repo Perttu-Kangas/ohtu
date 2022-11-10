@@ -1,7 +1,7 @@
 class Varasto:
     def __init__(self, tilavuus, alku_saldo = 0):
         self.tilavuus = max(tilavuus, 0)
-        self.saldo = min(alku_saldo, tilavuus)
+        self.saldo = min(alku_saldo if alku_saldo > 0 else 0, tilavuus)
 
     # huom: ominaisuus voidaan myös laskea.
     # Ei tarvita erillistä kenttää viela_tilaa tms.
