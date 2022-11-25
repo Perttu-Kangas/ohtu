@@ -1,0 +1,3 @@
+Start, Stop, Continue, More of, Less of Wheel: kestää noin 10-25 minuuttia riippuen ryhmäkoosta. Scrum master piirtää ympyrän, jossa on tämän tekniikan sanat. Kysymyksenä on esimerkiksi mitä pitäisi tehdä, mitä ei ole vielä tehty. Mikä on turhaa työtä? Mitä pitää jatkaa? Mitä pitäisi tehdä enemmän? Tämän pohjalta scrum masterin on helpompi kehittää ryhmän toimintaa.
+
+Glad, Sad, Mad: kestää jopa 60 minuuttia. Tarkoitus kerätä sprintin ajalta lappuja toiminnasta. Sitten kun lappuset selitetty niin ne jaetaan eri kategorioihin glad, sad, mad, mistä sitten valitaan mistä keskustellaan enemmän. Tämän pohjalta scrum master pystyy kehittämään ryhmän toimintaa.
