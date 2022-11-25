@@ -65,3 +65,10 @@ class TestOstoskori(unittest.TestCase):
         ostos = self.kori.ostokset()[0]
         self.assertEqual(ostos.tuotteen_nimi(), "yeet")
         self.assertEqual(ostos.lukumaara(), 2)
+    
+    def test_poisto_kun_kaksi_samaa(self):
+        self.kori.lisaa_tuote(self.def_tuote[0])
+        self.kori.lisaa_tuote(self.def_tuote[0])
+        self.kori.poista_tuote(self.def_tuote[0])
+        ostos = self.kori.ostokset()[0]
+        self.assertEqual(ostos.lukumaara(), 1)
