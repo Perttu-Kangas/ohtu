@@ -1,6 +1,6 @@
 from statistics import Statistics
 
-from QueryBuilder import QueryBuilder
+from query_builder import QueryBuilder
 from player_reader import PlayerReader
 
 def main():
